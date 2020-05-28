@@ -22,7 +22,7 @@
   "content_scripts": [
    {
      "matches": ["https://www.roblox.com/*"],
-     "run_at": "document_ends",
+     "run_at": "document_end",
      "js": ["content.js"]
    }
  ],
