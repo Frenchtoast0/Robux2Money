@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Robux2Money</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="jquery-3.5.1.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
+   </head>
+  <body class="bg-dark">
+    <div class="container">
+      <h4 class="border border-dark rounded">Choose a Currency</h4>
+
+      <div class="flexbox-container">
+        <select name="currency" id="currency">
+          <option value="USD">USA-USD($)</option>
+          <option value="CAD">Canada-CAD($)</option>
+          <option value="GBP">UK-GBP(&#163;)</option>
+          <option value="CNY">China-CNY(&#165;)</option>
+          <option value="INR">India-INR(&#8377;)</option>
+        </select>
+
+        <button id="save">Save</button>
+      </div>
+
+      </div>
+    </div>
+
+    <!--area to display alerts-->
+    <div id="AlertArea"></div>
+
+    <!--load script-->
+    <script src="popup.js"></script>
+
+  </body>
+</html>

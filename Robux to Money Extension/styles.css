@@ -1,0 +1,23 @@
+.alert{
+  font-size: 15px;
+}
+
+.flexbox-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4{
+  font-family: 'Cuprum', sans-serif;
+  color: white;
+}
+
+.alert{
+  margin-left: 10px;
+  margin-right: 10px;
+}

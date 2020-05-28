@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Robux2Money",
+  "description": "Replaces Robux value with real-world currency.",
+  "version": "1.1",
+  "incognito": "split",
+  "author": "Frenchtoast0",
+
+  "browser_action":{
+    "default_title": "Robux2Money",
+    "default_popup": "popup.html",
+
+    "default_icon": {
+      "19": "icons/goldrobux_16.png",
+      "38": "icons/goldrobux_48.png"
+    },
+    "icons": { "16": "icons/goldrobux_16.png",
+           "48": "icons/goldrobux_48.png",
+          "128": "icons/goldrobux_48.png" }
+    },
+
+  "content_scripts": [
+   {
+     "matches": ["https://www.roblox.com/*"],
+     "run_at": "document_ends",
+     "js": ["content.js"]
+   }
+ ],
+
+ "background": {
+   "persistent": false,
+   "scripts": ["background.js"]
+ },
+
+  "permissions": [
+     "activeTab",
+     "storage"
+   ]
+}
