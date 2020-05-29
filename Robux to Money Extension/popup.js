@@ -16,7 +16,6 @@ function save()
         chrome.tabs.sendMessage(tabs[0].id, {reload: true}, function(response) {
         });
       });
-      document.close();
     }
   });
 

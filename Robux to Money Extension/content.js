@@ -11,7 +11,7 @@ var newValue;
 var symbol;
 
 //run script when window loads
-window.addEventListener("onload", function(){
+window.addEventListener("load", function(){
 
   //get value from webpage
   robuxElement = document.getElementById('nav-robux-amount');
