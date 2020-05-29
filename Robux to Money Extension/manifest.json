@@ -4,7 +4,7 @@
   "description": "Replaces Robux value with real-world currency.",
   "version": "1.1",
   "incognito": "split",
-  "author": "Frenchtoast0",
+  "author": "Isaac Wittmeier (aka Frenchtoast0)",
 
   "browser_action":{
     "default_title": "Robux2Money",
