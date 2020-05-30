@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Robux2Money",
+  "name": "Robux To Money",
+  "short_name": "Robux2Money";
   "description": "Replaces Robux value with real-world currency.",
-  "version": "1.1",
+  "version": "1.2",
   "incognito": "split",
-  "author": "Isaac Wittmeier (aka Frenchtoast0)",
+  "author": "Frenchtoast0",
 
   "browser_action":{
     "default_title": "Robux2Money",
@@ -14,9 +15,11 @@
       "19": "icons/goldrobux_16.png",
       "38": "icons/goldrobux_48.png"
     },
-    "icons": { "16": "icons/goldrobux_16.png",
-           "48": "icons/goldrobux_48.png",
-          "128": "icons/goldrobux_48.png" }
+    "icons": {
+      "12": "icons/goldrobux_12.png",
+      "16": "icons/goldrobux_16.png",
+      "48": "icons/goldrobux_48.png",
+      "128": "icons/goldrobux_48.png" }
     },
 
   "content_scripts": [
@@ -34,6 +37,7 @@
 
   "permissions": [
      "activeTab",
-     "storage"
+     "storage",
+     "contextMenus"
    ]
 }
