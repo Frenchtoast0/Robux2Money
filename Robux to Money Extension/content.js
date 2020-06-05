@@ -14,9 +14,10 @@ var symbol;
 window.addEventListener("load", function(){
 
   //get value from webpage
-  robuxElement = document.getElementById('nav-robux-amount');
-  robuxElement = robuxElement.replace("K+",",000,000)
-  robuxElement = robuxElement.replace("M+",",000,000,000)
+  robuxElement = document.getElementById('nav-robux-amount').InnerHTML;
+  robuxElement = robuxElement.replace("K+",",000,000);
+  robuxElement = robuxElement.replace("M+",",000,000,000);
+  robuxElement = Number(robuxElement);
   initialValue = parseInt(robuxElement.innerHTML);
 
   //perform display based on conversion rate
