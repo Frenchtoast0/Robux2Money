@@ -14,11 +14,17 @@ var symbol;
 window.addEventListener("load", function(){
 
   //get value from webpage
-  robuxElement = document.getElementById('nav-robux-amount').InnerHTML;
-  robuxElement = robuxElement.replace("K+",",000,000);
-  robuxElement = robuxElement.replace("M+",",000,000,000);
-  robuxElement = Number(robuxElement);
-  initialValue = parseInt(robuxElement.innerHTML);
+  robuxElement = document.getElementById('nav-robux-amount');
+  robuxValue = robuxElement.innerHTML;
+
+  if (robuxValue.includes("K+")){
+    robuxValue.replace("K+",",000,000");
+  }
+  else if (robuxValue.includes("M+")){
+    robuxValue.replace("M+",",000,000,000");
+  }
+
+  initialValue = parseInt(robuxValue);
 
   //perform display based on conversion rate
   chrome.storage.local.get(['currency'], function(result) {
