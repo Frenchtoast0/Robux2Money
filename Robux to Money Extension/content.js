@@ -1,9 +1,9 @@
 //conversion values
 var DEVEX = 0.0035;
-var CAD_CONVERT = 1.38;
-var GBP_CONVERT = 0.81;
-var CNY_CONVERT = 7.13;
-var INR_CONVERT = 75.43;
+var CAD_CONVERT = 1.27;
+var GBP_CONVERT = 0.73;
+var CNY_CONVERT = 6.48;
+var INR_CONVERT = 72.98;
 
 var robuxElement;
 var initialValue;
@@ -18,10 +18,10 @@ window.addEventListener("load", function(){
   robuxValue = robuxElement.innerHTML;
 
   if (robuxValue.includes("K+")){
-    robuxValue.replace("K+",",000,000");
+    robuxValue.replace("K+","000000");
   }
   else if (robuxValue.includes("M+")){
-    robuxValue.replace("M+",",000,000,000");
+    robuxValue.replace("M+","000000000");
   }
 
   initialValue = parseInt(robuxValue);
