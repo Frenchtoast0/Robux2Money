@@ -4,6 +4,7 @@ var CAD_CONVERT = 1.27;
 var GBP_CONVERT = 0.73;
 var CNY_CONVERT = 6.48;
 var INR_CONVERT = 72.98;
+var AUD_CONVERT = 1.30;
 
 var robuxElement;
 var initialValue;
@@ -56,6 +57,12 @@ window.addEventListener("load", function(){
     {
       newValue = initialValue * DEVEX * INR_CONVERT;
       symbol = "&#8377;";
+      Display();
+    }
+    else if (result.currency == "AUD")
+    {
+      newValue = initialValue * DEVEX * AUD_CONVERT;
+      symbol = "$";
       Display();
     }
     //if it reaches here, no currency is saved
